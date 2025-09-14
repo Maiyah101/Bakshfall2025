@@ -1,0 +1,145 @@
+/* Import Google Fonts - alternatively, add this in your HTML <head> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap');
+
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Body styling with Google Font Roboto */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* very light gray */
+  color: #222222;             /* dark gray text */
+  line-height: 1.6;
+  padding: 20px 40px;
+}
+
+/* 3. Headers with Merriweather */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #bb2528; /* rich red */
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px; /* new property */
+  text-transform: uppercase; /* new property */
+}
+
+/* 4. Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bb2528;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease; /* new property: transition */
+  letter-spacing: 0.05em;
+}
+
+/* 5. Pseudo-class selector for hover */
+nav a:hover {
+  color: #4a90e2; /* bright blue */
+  transform: scale(1.1); /* new property: transform */
+  cursor: pointer;
+}
+
+/* Visited link styling */
+nav a:visited {
+  color: #7a1f21;
+}
+
+/* 6. Main content styling */
+main p, main ul, main ol, main blockquote {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+/* Blockquote styling */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #bb2528;
+  padding-left: 15px;
+  color: #555555;
+  background-color: #fff0f0;
+  opacity: 0.9; /* new property */
+  max-width: 600px;
+}
+
+/* 7. Footer styling */
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #666666;
+  opacity: 0.85; /* new property */
+}
+
+/* Descendant selector: style links only inside footer */
+footer a {
+  color: #bb2528;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer a:visited {
+  color: #7a1f21;
+}
+
+/* 8. Image styling - controls all image sizes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* new property */
+  border: 2px solid #ccc;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.1); /* new property */
+}
+
+/* 9. Gallery specific styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(187, 37, 40, 0.4); /* subtle red shadow */
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotate(2deg); /* fun hover effect */
+  border-color: #4a90e2;
+  cursor: pointer;
+}
+
+/* 10. Additional typography control */
+h2 {
+  letter-spacing: 0.12em;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
