@@ -1,0 +1,114 @@
+body {
+    background-color: cadetblue;
+    background-image: url;
+
+    margin: 0;
+    padding: 0;
+    font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#wrapper {
+width 80%;
+background-color: aquamarine;
+Margin: 40px auto;
+padding: 20px 100px;
+
+}
+
+.wow{
+
+ color:brown;   
+ font-weight: 900;
+ text-transform: uppercase;
+}
+
+main p{
+font-size: 20px;
+ line-height: 24px;
+
+}
+
+main table{
+background-color: cyan;
+}
+
+main table th{
+background-color: rgb(0, 174, 255);
+}
+
+main table td,
+main table th{
+padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: url('images/your-pattern.jpg') repeat;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+thead {
+  background-color: #b6a17f;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc2ab;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f1eb;
+}
+
+tbody tr:hover {
+  background-color: #e6e0d0;
+}
+
+/* Descendant selectors */
+td p, td a {
+  font-size: 0.9em;
+  color: #333333;
+}
+body {
+  background: url('images/your-background.jpg') repeat;
+}
+body.featured-bg {
+  background-color: #ccffff; /* Light cyan base color */
+  background-image: url('images/background-tile.jpg'); /* Your seamless texture */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  color: #000000; /* Dark text for contrast */
+}
+
+/* === HOME PAGE BACKGROUND === */
+body.home-bg {
+  background-color: #f0f8ff; /* Light azure fallback */
+  background-image: url('images/background-tile-home.jpg'); /* Your home page seamless tile */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  color: #000000; /* Black text for legibility */
+}
+
+/* === TYPES PAGE BACKGROUND === */
+body.types-bg {
+  background-color: #e6f2ff; /* Soft light blue fallback */
+  background-image: url('images/background-tile-types.jpg'); /* Your types page seamless tile */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  color: #000; /* Black text for good contrast */
+}
