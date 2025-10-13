@@ -1,0 +1,132 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: #13583A;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    background-color: #229C67;
+    margin: 40px auto;
+    overflow: hidden; /* contain floated elements */
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #33E89A;
+    color: #000;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+nav {
+    background-color: rgb(137, 189, 188);
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #13583A;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 120px;
+    transition: background 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+}
+
+nav li:hover {
+    background-color: #33E89A;
+}
+
+nav a:hover {
+    color: #13583A;
+}
+
+main {
+    background-color: #1B7A50;
+    width: 70%;
+    float: left;
+    min-height: 400px;
+    color: white;
+}
+
+aside {
+    background-color: #229C67;
+    width: 30%;
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+aside img {
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Float boxes */
+.image-floats {
+    margin-top: 20px;
+}
+
+.float-box {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.float-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Clear float */
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: #33E89A;
+    text-align: center;
+    clear: both;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    color: #000;
+}
